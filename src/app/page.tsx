@@ -21,7 +21,7 @@ export default async function Home() {
   }
 
   return (
-    <div>
+    <div className="bg-black">
       <Header1 />
       <h1 className="ml-1 lg:ml-80 lg:text-5xl font-bold mt-6">AMAZING PRODUCTS</h1>
       {products.length > 0 ? (

@@ -29,7 +29,7 @@ export default function ProductClient({ product }: ProductClientProps) {
   return (
     <div>
       <Header1 />
-      <div className="p-4 sm:p-6">
+      <div className="p-4 sm:p-6 bg-black">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {/* Product Image */}
