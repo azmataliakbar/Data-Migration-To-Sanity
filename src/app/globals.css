@@ -65,13 +65,13 @@ h1::before {
 /* Responsive styles for mobile screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.5rem; /* Adjust font size for mobile screens */
+    font-size: 2.0rem; /* Adjust font size for mobile screens */
     margin-left: 0; /* Remove large margin for centering */
     text-align: center; /* Center text on mobile screens */
   }
 
   h1::before {
-    font-size: 1.5rem; /* Match font size for animation */
+    font-size: 2.0rem; /* Match font size for animation */
     padding-left: 0px;
   }
 }
