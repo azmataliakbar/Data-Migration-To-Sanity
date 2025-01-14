@@ -23,11 +23,11 @@ export default async function Home() {
   return (
     <div>
       <Header1 />
-      <h1 className="text-5xl font-bold mt-6">AMAZING PRODUCTS</h1>
+      <h1 className="ml-1 lg:ml-80 lg:text-5xl font-bold mt-6">AMAZING PRODUCTS</h1>
       {products.length > 0 ? (
         <ProductGrid products={products} />
       ) : (
-        <p className="text-center text-gray-500 mt-10">No products found.</p>
+        <p className="text-center text-white mt-10">No products found.</p>
       )}
       <OurPromise />
       <Last />

@@ -21,12 +21,12 @@ body {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 7rem; /* Default for large screens */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: transparent;
   -webkit-text-stroke: 3px darkmagenta;
   position: relative;
-  margin-left: 400px;
+  margin-left: 400px; /* Center text for large screens */
   overflow: hidden; /* Restrict animation area to the text */
   display: inline-block;
   
@@ -39,24 +39,53 @@ h1::before {
   left: 0;
   height: 100%;
   width: 0; /* Start with no width */
-  color: darkmagenta;;
+  color: darkmagenta;
   border-right: 4px solid darkmagenta; /* Cursor effect */
   white-space: nowrap;
   overflow: hidden;
   animation: textAnimation 5s ease-in-out infinite;
+  
 }
 
 @keyframes textAnimation {
   0% {
     width: 0; /* Start with no text visible */
-    color: rgb(245, 200, 245) ;
+    color: rgb(245, 200, 245);
   }
   50% {
     width: 100%; /* Fully visible at halfway point */
-    color: rgb(245, 200, 245) ;
+    color: rgb(245, 200, 245);
   }
   100% {
     width: 0; /* Reset at the end */
-    color: rgb(245, 200, 245) ;
+    color: rgb(245, 200, 245);
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for mobile screens */
+    margin-left: 0; /* Remove large margin for centering */
+    text-align: center; /* Center text on mobile screens */
+  }
+
+  h1::before {
+    font-size: 1.5rem; /* Match font size for animation */
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem; /* Further reduce font size for very small screens */
+    margin-left: 0;
+    padding-left: 0px;
+  }
+
+  h1::before {
+    font-size: 1.6rem; /* Match font size for animation */
+    margin-left: 0;
+    padding-left: 0px;
   }
 }
