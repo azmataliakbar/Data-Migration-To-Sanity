@@ -45,7 +45,7 @@ export default function Header() {
           <div className="flex gap-8 lg:gap-4 items-center">
             <div>
               <Image
-                src="/bck3.gif"
+                src="/glb1.jpg"
                 alt="Logo Shopping"
                 width={100}
                 height={100}
@@ -53,7 +53,7 @@ export default function Header() {
               />
             </div>
             <div>
-              <h2 className="text-2xl mt-1 lg:mt-6 text-white hover:text-fuchsia-300 font-bold text-bg-yellow-100 hover:scale-y-150">Global Online Shopping Store</h2>
+              <h2 className="text-2xl mt-1 lg:mt-2 text-white hover:text-fuchsia-300 font-bold text-bg-yellow-100 hover:scale-y-150">Global Online Shopping Store</h2>
             </div>
           </div>
 

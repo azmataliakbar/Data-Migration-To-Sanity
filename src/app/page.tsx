@@ -23,7 +23,9 @@ export default async function Home() {
   return (
     <div className="bg-black">
       <Header1 />
-      <h1 className="ml-1 lg:ml-80 lg:text-5xl font-bold mt-6">AMAZING PRODUCTS</h1>
+      <div className="flex justify-center items-center">
+      <h1 className="text-3xl text-center lg:text-7xl font-bold mt-4 text-fuchsia-400 hover:scale-y-150 hover:text-white">AMAZING PRODUCTS</h1>
+      </div>
       {products.length > 0 ? (
         <ProductGrid products={products} />
       ) : (
