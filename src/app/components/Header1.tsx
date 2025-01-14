@@ -43,6 +43,7 @@ export default function Header() {
 
           {/* Header Title */}
           <div className="flex gap-8 lg:gap-4 items-center">
+            <Link href="/" >
             <div>
               <Image
                 src="/glb1.jpg"
@@ -52,9 +53,12 @@ export default function Header() {
                 className="hover:scale-125 ml-6 rounded"
               />
             </div>
+              </Link>
+              <Link href="/" >
             <div>
               <h2 className="text-2xl mt-1 lg:mt-2 text-white hover:text-fuchsia-300 font-bold text-bg-yellow-100 hover:scale-y-150">Global Online Shopping Store</h2>
             </div>
+            </Link>
           </div>
 
           {/* Navigation for large screens */}

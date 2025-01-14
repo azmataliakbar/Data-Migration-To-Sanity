@@ -23,11 +23,9 @@ export default function Footer() {
                 <li className="hover:scale-y-150 font-bold text-white hover:underline hover:text-fuchsia-200">
                   <Link href="/">Home</Link>
                 </li>
+                
                 <li className="hover:scale-y-150 font-bold text-white hover:underline hover:text-fuchsia-200">
-                  <Link href="/Shop">Shop</Link>
-                </li>
-                <li className="hover:scale-y-150 font-bold text-white hover:underline hover:text-fuchsia-200">
-                  <Link href="/Blog">About</Link>
+                  <Link href="/About">About</Link>
                 </li>
                 <li className="hover:scale-y-150 font-bold text-white hover:underline hover:text-purple-200">
                   <Link href="/Contact">Contact</Link>
@@ -41,13 +39,13 @@ export default function Footer() {
               </h3>
               <ul>
                 <li className="text-white hover:text-fuchsia-200 hover:scale-y-150 font-bold">
-                  <Link href="/CheckOut">PaymentOption</Link>
+                  <Link href="">PaymentOption</Link>
                 </li>
                 <li className="text-white hover:text-fuchsia-200 hover:scale-y-150 font-bold">
-                  <Link href="/Shop#returns">Returns</Link>
+                  <Link href="">Returns</Link>
                 </li>
                 <li className="text-white hover:text-fuchsia-200 hover:scale-y-150 font-bold">
-                  <Link href="/Shop#returns">PrivatePolicies</Link>
+                  <Link href="">PrivatePolicies</Link>
                 </li>
               </ul>
             </div>
